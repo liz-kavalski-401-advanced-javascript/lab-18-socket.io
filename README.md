@@ -1,44 +1,43 @@
 # lab-18-socket.io
 
-### Author: Student/Group Name
+### Author: Liz Kavalski
 
 ### Links and Resources
-* [submission PR](http://xyz.com)
-* [travis](http://xyz.com)
-* [back-end](http://xyz.com) (when applicable)
-* [front-end](http://xyz.com) (when applicable)
+* [![Build Status](https://travis-ci.com/liz-kavalski-401-advanced-javascript/lab-18-socket.io.svg?branch=master)](https://travis-ci.com/liz-kavalski-401-advanced-javascript/lab-18-socket.io)
+* [submission PR](https://github.com/liz-kavalski-401-advanced-javascript/lab-18-socket.io/pull/1)
 
 #### Documentation
-* [api docs](http://xyz.com) (API servers)
-* [jsdoc](http://xyz.com) (Server assignments)
-* [styleguide](http://xyz.com) (React assignments)
+* jsdoc (Server assignments)
 
 ### Modules
-#### `modulename.js`
-##### Exported Values and Methods
+#### `server/socket.io.server.js`
+listens for a connect the between the app.js and logger.js and broadcast the message
+#### `server/file-error.js`
+listens for a file-error and broadcast the message
+#### `server/socket.io.server.js`
+listens for a file-save and broadcast the 
+#### `logger/logger.js`
+connect the server
+#### `socket.io.server.js`
+connect the between the app.js and logger.js
 
-###### `foo(thing) -> string`
-Usage Notes or examples
-
-###### `bar(array) -> array`
-Usage Notes or examples
 
 ### Setup
-#### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
+#### create a JSON Package:
+* npm i:
+  * "faker"
+  * "jest"
+  * "jsdoc"
+  * "socket.io"
+  * "socket.io-client"
+
 
 #### Running the app
-* `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
+In the treminal run `socket.io.server.js`, `logger.js` and the `app.js` 
+* it should populate in the treminal.
   
 #### Tests
-* How do you run tests?
-* What assertions were made?
-* What assertions need to be / should be made?
+* No test are written at this point
 
 #### UML
-Link to an image of the UML for your application and response to events
+![UML-lab18](/Lab-18-umm.jpg)
